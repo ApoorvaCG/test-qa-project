@@ -86,6 +86,7 @@ const Form = <T extends FieldValues = FieldValues>({
         >
           {isLoading ? "Adding..." : "Add"}
         </button>
+        <p className="text-gray-500">Note: * means it is required field</p>
       </form>
 
       {message && (

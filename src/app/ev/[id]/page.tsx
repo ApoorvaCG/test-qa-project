@@ -31,7 +31,7 @@ const EvDetailsPage = async ({ params }: PageProps) => {
               </p>
             </div>
             <p className="text-3xl font-bold text-blue-600">
-              {formatPrice(ev.price)}
+              {formatPrice(ev.price, 'USD')}
             </p>
           </div>
 

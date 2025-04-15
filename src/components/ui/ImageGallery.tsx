@@ -51,10 +51,9 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
           >
             {images.map((image, index) => (
               <div
+                role="button"
+                title="click to view image"
                 key={index}
-                onClick={() => {
-                  setSelectedImage(image);
-                }}
                 className={`flex-shrink-0 cursor-pointer transition-all duration-200 `}
               >
                 <Image

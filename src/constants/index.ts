@@ -1,7 +1,7 @@
 export const EV_FILTER_OPTIONS = [
   { id: 1, text: "All", value: "" },
-  { id: 2, text: "New", value: "New" },
-  { id: 3, text: "Used", value: "Used" },
+  { id: 2, text: "New", value: "Used" },
+  { id: 3, text: "Used", value: "New" },
 ];
 
 export const EV_SORTING_OPTIONS = [
@@ -26,7 +26,7 @@ export enum SORTING_VALUE {
 export const FORM_FIELDS = [
   {
     name: "title",
-    label: "Enquiry Title",
+    label: "Enquiry Title*",
     placeholder: "Enter your enquiry",
     validation: {
       required: "This field is required",
@@ -36,7 +36,7 @@ export const FORM_FIELDS = [
   },
   {
     name: "description",
-    label: "Description",
+    label: "Description*",
     placeholder: "Explain your request",
     required: "Description is required",
     validation: {

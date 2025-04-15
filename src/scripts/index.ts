@@ -1,6 +1,6 @@
-export const formatPrice = (price:number) => {
+export const formatPrice = (price:number, curreny?:string) => {
     return new Intl.NumberFormat("de-DE", {
       style: "currency",
-      currency: "EUR",
+      currency: curreny || 'EUR',
     }).format(price);
   };

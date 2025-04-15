@@ -31,7 +31,7 @@ const SearchInput = ({ searchTerm }: SearchInputProps) => {
   };
 
   const resetInput = () => {
-    const form = document.querySelector(".search-form") as HTMLFormElement;
+    const form = document.querySelector(".search-form-label") as HTMLFormElement;
     if (form) form.reset();
   };
 
